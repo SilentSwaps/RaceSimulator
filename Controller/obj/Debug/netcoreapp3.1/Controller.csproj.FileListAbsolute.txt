@@ -1,0 +1,12 @@
+D:\source\repos\RaceTrack\Controller\bin\Debug\netcoreapp3.1\Controller.deps.json
+D:\source\repos\RaceTrack\Controller\bin\Debug\netcoreapp3.1\Controller.dll
+D:\source\repos\RaceTrack\Controller\bin\Debug\netcoreapp3.1\Controller.pdb
+D:\source\repos\RaceTrack\Controller\obj\Debug\netcoreapp3.1\Controller.csprojAssemblyReference.cache
+D:\source\repos\RaceTrack\Controller\obj\Debug\netcoreapp3.1\Controller.AssemblyInfoInputs.cache
+D:\source\repos\RaceTrack\Controller\obj\Debug\netcoreapp3.1\Controller.AssemblyInfo.cs
+D:\source\repos\RaceTrack\Controller\obj\Debug\netcoreapp3.1\Controller.csproj.CoreCompileInputs.cache
+D:\source\repos\RaceTrack\Controller\obj\Debug\netcoreapp3.1\Controller.dll
+D:\source\repos\RaceTrack\Controller\obj\Debug\netcoreapp3.1\Controller.pdb
+D:\source\repos\RaceTrack\Controller\bin\Debug\netcoreapp3.1\Model.dll
+D:\source\repos\RaceTrack\Controller\bin\Debug\netcoreapp3.1\Model.pdb
+D:\source\repos\RaceTrack\Controller\obj\Debug\netcoreapp3.1\Controller.csproj.CopyComplete

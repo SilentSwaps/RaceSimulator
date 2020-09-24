@@ -30,7 +30,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\source\\repos\\RaceTrack\\Model\\Model.csproj": {
+                "projectPath": "D:\\source\\repos\\RaceTrack\\Model\\Model.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

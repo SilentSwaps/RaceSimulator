@@ -1,12 +1,21 @@
 ﻿using System;
+using System.Threading;
+using Controller;
 
 namespace RaceTrack
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Data.Initialize();
+
+            Console.WriteLine($"Current track: {Data.CurrentRace.Track.Name}");
+
+            for (; ; )
+            {
+                Thread.Sleep(100);
+            }
         }
     }
 }
