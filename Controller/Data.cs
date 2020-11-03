@@ -15,30 +15,25 @@ namespace Controller
             Competition = new Competition();
             AddParticipants();
             AddTracks();
-            NextRace();
         }
 
         public static void AddParticipants()
         {
-            Car racecar = new Car(100, 100, 250, false);
+            Car racecar = new Car(5, 2, 12, false);
 
             Driver leroy = new Driver("Leroy", 1, racecar, TeamColors.Red);
             Driver pietertje = new Driver("Pietertje", 2, racecar, TeamColors.Green);
-            Driver ernst = new Driver("ernst", 3, racecar, TeamColors.Yellow);
-            Driver dwayne = new Driver("Dwayne, the rock", 4, racecar, TeamColors.Blue);
 
             Competition.Participants.Add(leroy);
             Competition.Participants.Add(pietertje);
-            Competition.Participants.Add(ernst);
-            Competition.Participants.Add(dwayne);
         }
 
         public static void AddTracks()
         {
-            LinkedList<Section> section = new LinkedList<Section>();
+            SectionTypes[] sections = {SectionTypes.StartGrid, SectionTypes.RightCorner, SectionTypes.Straight, SectionTypes.Straight, SectionTypes.Finish};
 
-            Track steenwijk = new Track("Rondje Steenwiek", section);
-            Track zwolle = new Track("Zwollywood", section);
+            Track steenwijk = new Track("Rondje Steenwiek", sections);
+            Track zwolle = new Track("Zwollywood", sections);
 
             Competition.Tracks.Enqueue(steenwijk);
             Competition.Tracks.Enqueue(zwolle);
