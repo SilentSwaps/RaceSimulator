@@ -26,7 +26,7 @@ namespace Controller
         private Timer timer;
         const int maxLaps = 3;
         //events
-        public event OnDriversChanged DriversChanged;
+        public event OnDriversChanged DriversChanged:
 
         public event OnRaceFinished RaceFinished;
 
