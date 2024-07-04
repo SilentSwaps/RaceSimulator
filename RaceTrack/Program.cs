@@ -11,12 +11,11 @@ namespace RaceTrack
         {
             Data.Initialize();
             Data.NextRace();
-            //adding driverschanged event to the currentrace
-            Data.CurrentRace.DriversChanged += Visual.OnDriversChanged;
+
             Visual.Initialize();
             Visual.DrawTrack(Data.CurrentRace.Track);
             
-            Console.WriteLine($"Current track: {Data.CurrentRace.Track.Name}");
+            //Console.WriteLine($"Current track: {Data.CurrentRace.Track.Name}");
 
             for (; ; )
             {

@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaceTrack", "RaceTrack\RaceTrack.csproj", "{04703003-071B-49CB-B8E6-BD257BFE2250}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RaceTrack", "RaceTrack\RaceTrack.csproj", "{04703003-071B-49CB-B8E6-BD257BFE2250}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{BA96B650-FC9B-49A4-9C1F-15D3190D224A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model", "Model\Model.csproj", "{BA96B650-FC9B-49A4-9C1F-15D3190D224A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controller", "Controller\Controller.csproj", "{D797F836-28EB-48D3-98E4-1D985E674242}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Controller", "Controller\Controller.csproj", "{D797F836-28EB-48D3-98E4-1D985E674242}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllerTest", "ControllerTest\ControllerTest.csproj", "{29C37D93-E1B2-4E49-80AA-70D91F3360ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControllerTest", "ControllerTest\ControllerTest.csproj", "{29C37D93-E1B2-4E49-80AA-70D91F3360ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp", "WpfApp\WpfApp.csproj", "{79E75410-5047-494B-887D-C5A9A2E1327D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{29C37D93-E1B2-4E49-80AA-70D91F3360ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29C37D93-E1B2-4E49-80AA-70D91F3360ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29C37D93-E1B2-4E49-80AA-70D91F3360ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79E75410-5047-494B-887D-C5A9A2E1327D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79E75410-5047-494B-887D-C5A9A2E1327D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79E75410-5047-494B-887D-C5A9A2E1327D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79E75410-5047-494B-887D-C5A9A2E1327D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
