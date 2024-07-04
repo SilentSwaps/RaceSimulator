@@ -10,6 +10,9 @@ namespace Controller
         public static Competition Competition { get; set; }
         public static Race CurrentRace;
 
+        public delegate void OnRaceFinished(object sender, EventArgs e);
+        public static event OnRaceFinished Onracefinished;
+
         public static void Initialize()
         {
             Competition = new Competition();
@@ -19,21 +22,67 @@ namespace Controller
 
         public static void AddParticipants()
         {
-            Car racecar = new Car(5, 2, 12, false);
+            Car car1 = new Car(10, 10, 2, false);
+            Car car2 = new Car(10, 10, 9, false);
 
-            Driver leroy = new Driver("Leroy", 1, racecar, TeamColors.Red);
-            Driver pietertje = new Driver("Pietertje", 2, racecar, TeamColors.Green);
+            Driver mark = new Driver("Mark", 0, car1, TeamColors.Red);
+            Driver leroy = new Driver("Leroy", 0, car2, TeamColors.Blue);
 
+            Competition.Participants.Add(mark);
             Competition.Participants.Add(leroy);
-            Competition.Participants.Add(pietertje);
         }
 
         public static void AddTracks()
         {
-            SectionTypes[] sections = {SectionTypes.StartGrid, SectionTypes.RightCorner, SectionTypes.Straight, SectionTypes.Straight, SectionTypes.Finish};
+            SectionTypes[] sections = { SectionTypes.RightCorner,
+                SectionTypes.StartGrid,
+                SectionTypes.Straight,
+                SectionTypes.Finish,
+                SectionTypes.Straight,
+                SectionTypes.RightCorner,
+                SectionTypes.Straight,
+                SectionTypes.Straight,
+                SectionTypes.RightCorner,
+                SectionTypes.Straight,
+                SectionTypes.LeftCorner,
+                SectionTypes.Straight,
+                SectionTypes.RightCorner,
+                SectionTypes.Straight,
+                SectionTypes.Straight,
+                SectionTypes.RightCorner,
+                SectionTypes.Straight,
+                SectionTypes.Straight,
+                SectionTypes.Straight,
+                SectionTypes.Straight
+            };
+            SectionTypes[] sectionszwolle =
+            {
+                SectionTypes.RightCorner,
+                SectionTypes.StartGrid,
+                SectionTypes.Straight,
+                SectionTypes.Finish,
+                SectionTypes.Straight,
+                SectionTypes.Straight,
+                SectionTypes.RightCorner,
+                SectionTypes.Straight,
+                SectionTypes.Straight,
+                SectionTypes.RightCorner,
+                SectionTypes.Straight,
+                SectionTypes.RightCorner,
+                SectionTypes.LeftCorner,
+                SectionTypes.Straight,
+                SectionTypes.LeftCorner,
+                SectionTypes.Straight,
+                SectionTypes.RightCorner,
+                SectionTypes.Straight,
+                SectionTypes.RightCorner,
+                SectionTypes.Straight,
+                SectionTypes.Straight,
+                SectionTypes.Straight,
+            };
 
             Track steenwijk = new Track("Rondje Steenwiek", sections);
-            Track zwolle = new Track("Zwollywood", sections);
+            Track zwolle = new Track("Zwollywood", sectionszwolle);
 
             Competition.Tracks.Enqueue(steenwijk);
             Competition.Tracks.Enqueue(zwolle);
@@ -42,11 +91,13 @@ namespace Controller
         public static void NextRace()
         {
             Track nextTrack = Competition.NextTrack();
+            CurrentRace = nextTrack != null ? new Race(nextTrack, Competition.Participants) : null;
+        }
 
-            if (nextTrack != null)
-            {
-                CurrentRace = new Race(nextTrack, Competition.Participants);
-            }
+        public static void Finishedrace()
+        {
+            NextRace();
+            Onracefinished?.Invoke(null, new EventArgs());
         }
     }
 }

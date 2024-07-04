@@ -7,3 +7,12 @@ D:\source\repos\RaceTrack\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfo.cs
 D:\source\repos\RaceTrack\Model\obj\Debug\netcoreapp3.1\Model.csproj.CoreCompileInputs.cache
 D:\source\repos\RaceTrack\Model\obj\Debug\netcoreapp3.1\Model.dll
 D:\source\repos\RaceTrack\Model\obj\Debug\netcoreapp3.1\Model.pdb
+C:\Users\leroy\Documents\old_backup\Backup\save\school\race\RaceTrack\Model\bin\Debug\netcoreapp3.1\Model.deps.json
+C:\Users\leroy\Documents\old_backup\Backup\save\school\race\RaceTrack\Model\bin\Debug\netcoreapp3.1\Model.dll
+C:\Users\leroy\Documents\old_backup\Backup\save\school\race\RaceTrack\Model\bin\Debug\netcoreapp3.1\Model.pdb
+C:\Users\leroy\Documents\old_backup\Backup\save\school\race\RaceTrack\Model\obj\Debug\netcoreapp3.1\Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leroy\Documents\old_backup\Backup\save\school\race\RaceTrack\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfoInputs.cache
+C:\Users\leroy\Documents\old_backup\Backup\save\school\race\RaceTrack\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfo.cs
+C:\Users\leroy\Documents\old_backup\Backup\save\school\race\RaceTrack\Model\obj\Debug\netcoreapp3.1\Model.csproj.CoreCompileInputs.cache
+C:\Users\leroy\Documents\old_backup\Backup\save\school\race\RaceTrack\Model\obj\Debug\netcoreapp3.1\Model.dll
+C:\Users\leroy\Documents\old_backup\Backup\save\school\race\RaceTrack\Model\obj\Debug\netcoreapp3.1\Model.pdb

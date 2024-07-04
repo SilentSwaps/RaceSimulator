@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Yzlat+MliJxj+hmvuh6pPSHCvySfqP3g10JB7n+ttq1i9yS7NyDfer2sY88h78vywp+SuvCMF7mCFrfJUEeRrg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\leroy\\Documents\\old_backup\\Backup\\save\\school\\race\\RaceTrack\\WpfApp\\WpfApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\leroy\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\leroy\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

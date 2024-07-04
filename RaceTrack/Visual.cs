@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Model;
 using Controller;
+using System.Diagnostics;
 
 namespace RaceTrack
 {
@@ -16,11 +17,15 @@ namespace RaceTrack
 
         public static void Initialize()
         {
-            CursorLeft = Console.CursorLeft;
-            CursorTop = Console.CursorTop;
+          
+            CursorLeft = 1;
+            CursorTop = 1;
             CurrentDirection = 1;
             Graphics = new Dictionary<string, string[]>();
             FillGraphicsDictionary();
+
+            Data.CurrentRace.DriversChanged += OnDriversChanged;
+            Data.CurrentRace.StartNextRace += OnStartNextRace;
         }
 
         #region graphics
@@ -110,7 +115,7 @@ namespace RaceTrack
             {
                 for (int i = 0; i < newGraphics.Length; i++)
                 {
-                    newGraphics[i] = newGraphics[i].Replace("1", sectionData.Left.Name.Substring(0, 1));
+                    newGraphics[i] = newGraphics[i].Replace("1", sectionData.Left.IEquipment.IsBroken ? "x" : sectionData.Left.Name.Substring(0, 1));
                 }
             }
             else
@@ -125,7 +130,7 @@ namespace RaceTrack
             {
                 for (int i = 0; i < newGraphics.Length; i++)
                 {
-                    newGraphics[i] = newGraphics[i].Replace("2", sectionData.Right.Name.Substring(0, 1));
+                    newGraphics[i] = newGraphics[i].Replace("2", sectionData.Right.IEquipment.IsBroken ? "x" : sectionData.Right.Name.Substring(0, 1));
                 }
             }
             else
@@ -183,6 +188,24 @@ namespace RaceTrack
         public static void OnDriversChanged(object sender, DriversChangedEventArgs args)
         {
             DrawTrack(args.Track);
+        }
+
+        public static void OnStartNextRace(object sender, EventArgs e)
+        {
+          Data.CurrentRace.DriversChanged -= OnDriversChanged;
+          Data.CurrentRace.StartNextRace -= OnStartNextRace;
+
+          Data.NextRace();
+          if (Data.CurrentRace != null)
+          {
+            Initialize();
+            DrawTrack(Data.CurrentRace.Track);
+          }
+          else
+          {
+            Console.Clear();
+            Console.WriteLine("All races completed");
+          }
         }
     }
 }

@@ -10,3 +10,16 @@ D:\source\repos\RaceTrack\Controller\obj\Debug\netcoreapp3.1\Controller.pdb
 D:\source\repos\RaceTrack\Controller\bin\Debug\netcoreapp3.1\Model.dll
 D:\source\repos\RaceTrack\Controller\bin\Debug\netcoreapp3.1\Model.pdb
 D:\source\repos\RaceTrack\Controller\obj\Debug\netcoreapp3.1\Controller.csproj.CopyComplete
+C:\Users\leroy\Documents\old_backup\Backup\save\school\race\RaceTrack\Controller\bin\Debug\netcoreapp3.1\Controller.deps.json
+C:\Users\leroy\Documents\old_backup\Backup\save\school\race\RaceTrack\Controller\bin\Debug\netcoreapp3.1\Controller.dll
+C:\Users\leroy\Documents\old_backup\Backup\save\school\race\RaceTrack\Controller\bin\Debug\netcoreapp3.1\Controller.pdb
+C:\Users\leroy\Documents\old_backup\Backup\save\school\race\RaceTrack\Controller\bin\Debug\netcoreapp3.1\Model.dll
+C:\Users\leroy\Documents\old_backup\Backup\save\school\race\RaceTrack\Controller\bin\Debug\netcoreapp3.1\Model.pdb
+C:\Users\leroy\Documents\old_backup\Backup\save\school\race\RaceTrack\Controller\obj\Debug\netcoreapp3.1\Controller.csproj.AssemblyReference.cache
+C:\Users\leroy\Documents\old_backup\Backup\save\school\race\RaceTrack\Controller\obj\Debug\netcoreapp3.1\Controller.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leroy\Documents\old_backup\Backup\save\school\race\RaceTrack\Controller\obj\Debug\netcoreapp3.1\Controller.AssemblyInfoInputs.cache
+C:\Users\leroy\Documents\old_backup\Backup\save\school\race\RaceTrack\Controller\obj\Debug\netcoreapp3.1\Controller.AssemblyInfo.cs
+C:\Users\leroy\Documents\old_backup\Backup\save\school\race\RaceTrack\Controller\obj\Debug\netcoreapp3.1\Controller.csproj.CoreCompileInputs.cache
+C:\Users\leroy\Documents\old_backup\Backup\save\school\race\RaceTrack\Controller\obj\Debug\netcoreapp3.1\Controller.csproj.CopyComplete
+C:\Users\leroy\Documents\old_backup\Backup\save\school\race\RaceTrack\Controller\obj\Debug\netcoreapp3.1\Controller.dll
+C:\Users\leroy\Documents\old_backup\Backup\save\school\race\RaceTrack\Controller\obj\Debug\netcoreapp3.1\Controller.pdb
